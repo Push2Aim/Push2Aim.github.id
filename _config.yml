@@ -1,0 +1,16 @@
+title: PUSH2AIM landing page
+email:
+description: Motivational Fitness Friend you can chat with. Be part of HeyBuddy's public beta!
+baseurl:
+url: https://push2aim.github.io
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

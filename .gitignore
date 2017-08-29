@@ -37,3 +37,8 @@ jspm_packages
 .node_repl_history
 
 /.idea
+
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata
