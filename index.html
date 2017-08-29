@@ -44,6 +44,15 @@
         src="http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a549e36f025f00017f0c20_iPhone7%20HeyBuddy%20Perspective.png"
         srcset="http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a549e36f025f00017f0c20_iPhone7%20HeyBuddy%20Perspective-p-500.png 500w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a549e36f025f00017f0c20_iPhone7%20HeyBuddy%20Perspective-p-800.png 800w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a549e36f025f00017f0c20_iPhone7%20HeyBuddy%20Perspective-p-1080.png 1080w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a549e36f025f00017f0c20_iPhone7%20HeyBuddy%20Perspective-p-1600.png 1600w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a549e36f025f00017f0c20_iPhone7%20HeyBuddy%20Perspective-p-2000.png 2000w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a549e36f025f00017f0c20_iPhone7%20HeyBuddy%20Perspective.png 2048w">
     <h1 class="cta">Be part of HeyBuddy's <strong>public beta!</strong></h1>
+
+    <div class="fb-send-to-messenger"
+         messenger_app_id={{ site.facebook_sdk.app_id }}
+         page_id={{ site.facebook_sdk.page_id }}
+         data-ref={{ site.facebook_sdk.data-ref }}
+         color={{ site.facebook_sdk.color }}
+         size={{ site.facebook_sdk.size }}>
+    </div>
+
     <div class="form-block w-form">
         <form data-name="Email Form" id="email-form" name="email-form"><input class="cta_button w-input"
                                                                               data-name="message" id="message"
@@ -72,5 +81,23 @@
         type="text/javascript"></script>
 <!--[if lte IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: {{ site.facebook_sdk.app_id }},
+            xfbml: true,
+            version: "v2.6"
+        });
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
 </body>
 </html>

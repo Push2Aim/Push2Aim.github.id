@@ -6,6 +6,14 @@ url: https://push2aim.github.io
 twitter_username: push2aim
 github_username:  Push2Aim
 
+# Facebook SDK Settings
+facebook_sdk:
+  app_id: 640247136178069
+  page_id: 1808838016021226
+  data-ref: FROM_LANDING_PAGE
+  color: blue
+  size: xlarge
+
 # Build settings
 markdown: kramdown
 theme: minima
