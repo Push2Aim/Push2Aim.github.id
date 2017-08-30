@@ -57,12 +57,14 @@
     </div>
 
     <div class="form-block w-form">
-        <form data-name="Email Form" id="email-form" name="email-form">
+        <form data-name="Email Form" id="email-form" name="email-form"
+              action="//formspree.io/{{ site.email }}" method="post">
             <input class="cta_button w-input"
-                   data-name="message" id="message"
-                   maxlength="256" name="message"
+                   data-name="message" id="email"
+                   maxlength="256" name="email"
                    placeholder="Your email goes here"
-                   type="email">
+                   type="email"
+                   required="required">
             <input class="w-button"
                    data-wait="Please wait..."
                    value="Submit"
@@ -80,7 +82,7 @@
      src="http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a560bbc46d2200015ef969_HeyBuddy%20floaing%20QuadHD.jpg"
      srcset="http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a560bbc46d2200015ef969_HeyBuddy%20floaing%20QuadHD-p-800.jpeg 800w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a560bbc46d2200015ef969_HeyBuddy%20floaing%20QuadHD-p-1600.jpeg 1600w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a560bbc46d2200015ef969_HeyBuddy%20floaing%20QuadHD-p-2000.jpeg 2000w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a560bbc46d2200015ef969_HeyBuddy%20floaing%20QuadHD-p-2600.jpeg 2600w, http://uploads.webflow.com/59a51d43a1a95c0001f8c0f0/59a560bbc46d2200015ef969_HeyBuddy%20floaing%20QuadHD.jpg 2851w">
 <div class="imprint"><a class="about" href="#">About</a><a class="about"
-                                                           href="mailto:j.eisenlohr@push2aim.com?subject=Hi%20%3A-)">Contact</a>
+                                                           href="mailto:{{ site.email }}?subject=Hi%20%3A-)">Contact</a>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
 <script src="/webflow.js"
