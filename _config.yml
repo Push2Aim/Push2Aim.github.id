@@ -1,7 +1,7 @@
 title: PUSH2AIM landing page
 email: j.eisenlohr@push2aim.com
 description: Motivational Fitness Friend you can chat with. Be part of HeyBuddy's public beta!
-baseurl: /
+baseurl:
 url: https://push2aim.github.io
 twitter_username: push2aim
 github_username:  Push2Aim
